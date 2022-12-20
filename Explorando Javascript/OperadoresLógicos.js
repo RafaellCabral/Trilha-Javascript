@@ -14,14 +14,23 @@ const listaDeDestinos = new Array(
 
 
 const idadeComprador = 15;
+const estaAcompanhada = true;
 console.log("Destinos possíveis:");
 console.log(listaDeDestinos);
 
-if (idadeComprador >= 18) {
+
+
+
+if (idadeComprador >= 18 || estaAcompanhada == true) {
     console.log("Comprador maior de idade");
     listaDeDestinos.splice(2);
+} else if (estaAcompanhada == true) {
+    console.log("Comprador está acompanhado");
 } else {
-    console.log("Não é maior de idade e não posso vender");
+    console.log("Não é maior de Idade e não posso vender");
+    listaDeDestinos
+
 }
+
 
 //console.log(listaDeDestinos);
